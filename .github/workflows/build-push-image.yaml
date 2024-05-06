@@ -22,5 +22,4 @@ jobs:
           context: .
           push: true
           tags: 5464534563/node-hello:latest
-        secrets:
           DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }} 
