@@ -7,7 +7,7 @@ image:
 
 service:
   type: NodePort
-  port: 9009
+  port: 30000
   targetPort: 8000
 
 serviceAccount:
