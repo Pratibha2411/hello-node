@@ -1,4 +1,4 @@
 .DS_Store
 .vscode
 .prettierrc
-web-app
+docker-compose.yaml
