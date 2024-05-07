@@ -126,3 +126,21 @@ another way
 **2. Kubernetes Deployment:**
 - **ArgoCD Integration:** ArgoCD was utilized for GitOps management of the Helm chart deployment on a Kubernetes cluster. Instead of creating YAML files manually, the deployment was managed through the ArgoCD dashboard.
 
+- Also do:
+ ```lua 
+ kubectl port-forward svc/hello-node-service 9009:30009 
+ ```
+ ```lua 
+ kubectl port-forward svc/argocd-server -n argocd 8080:443
+ ```
+ ```lua 
+ kubectl get service
+ ```
+ ```lua 
+ kubectl get deployment
+ ```
+ ```lua 
+ kubectl get pod
+ ```
+
+
