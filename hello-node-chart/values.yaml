@@ -1,0 +1,24 @@
+replicaCount: 1
+
+image:
+  repository: 5464534563/node-hello
+  pullPolicy: IfNotPresent
+  tag: "latest"
+
+service:
+  type: NodePort
+  port: 30000
+  targetPort: 8000
+
+serviceAccount:
+  create: true
+
+ingress:
+  enabled: false  # Set to true if you want to enable Ingress
+
+autoscaling:
+  enabled: false  # Set to true if you want to enable Horizontal Pod Autoscaler
+  minReplicas: 1
+  maxReplicas: 2
+  targetCPUUtilizationPercentage: 50
+
