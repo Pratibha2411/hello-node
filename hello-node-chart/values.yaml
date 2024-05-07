@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: 5464534563/node-hello
+  repository: pbaloriya / hello-node
   pullPolicy: IfNotPresent
   tag: "latest"
 
