@@ -1,4 +1,4 @@
-name: Build and Push Docker Image
+name: Build then Push Docker Image
 
 on:
   push:
@@ -21,5 +21,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: 5464534563/node-hello:latest
+          tags: pbaloriya/hello-node:latest
           DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }} 
